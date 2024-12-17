@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
-<body>
+<body class="body">
     <div class="mainImgContainer">
         <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-        <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        <a class="infoLink" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="mainContainer">
 
         <h3>Add Item</h3>
         <div class="taskWrapper">
-            <input id="newTask" class="task" type="text"><button>Add</button>
+            <input id="newTask" class="task" type="text">
+            <button>Add</button>
         </div>
 
 
         <h3>Todo</h3>
 
-        <ul id="incompleteTasks">
-            <li><input type="checkbox">
+        <ul class="taskList" id="incompleteTasks">
+            <li class="taskListItem">
+                <input type="checkbox">
                 <label class="task">Pay Bills</label>
                 <input type="text" class="task">
                 <button class="edit">Edit</button>
@@ -42,8 +44,8 @@
 
         <h3>Completed</h3>
 
-        <ul id="completeTasks">
-            <li>
+        <ul class="taskList" id="completeTasks">
+            <li class="taskListItem">
                 <input type="checkbox" checked>
                 <label class="task">See the Doctor</label>
                 <input type="text" class="task">
